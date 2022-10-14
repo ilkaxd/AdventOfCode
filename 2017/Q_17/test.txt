@@ -1,0 +1,13 @@
+abcde
+eabcd
+eabdc
+baedc
+cbaed
+cbade
+ceadb
+bcead
+bceda
+ecbda
+aecbd
+aecdb
+abcde

@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
+# VScode
+.vscode/
+
 # C extensions
 *.so
 
@@ -127,3 +131,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Промежуточные вычисления
+temp.py
