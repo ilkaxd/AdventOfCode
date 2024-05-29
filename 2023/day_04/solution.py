@@ -43,7 +43,7 @@ class Card:
 
 
 def load_data():
-    with open(r'2023\D\input.txt') as f:
+    with open(r'2023\day_04\input.txt') as f:
         return f.readlines()
 
 

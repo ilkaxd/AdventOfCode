@@ -1,4 +1,28 @@
-from D.solution import scratchcards
+from day_01.solution import trebuchet
+from day_04.solution import scratchcards
+
+
+def test_A():
+    # first part
+    data = [
+        '1abc2',
+        'pqr3stu8vwx',
+        'a1b2c3d4e5f',
+        'treb7uchet'
+    ]
+    assert trebuchet(data) == 142
+
+    # second part
+    data = [
+        'two1nine',
+        'eightwothree',
+        'abcone2threexyz',
+        'xtwone3four',
+        '4nineeightseven2',
+        'zoneight234',
+        '7pqrstsixteen'
+    ]
+    assert trebuchet(data, False) == 281
 
 
 def test_D():
