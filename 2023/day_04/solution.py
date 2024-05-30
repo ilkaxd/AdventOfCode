@@ -1,3 +1,6 @@
+import os
+
+
 class Card:
     def __init__(self, card_row):
         card_description, only_numbers = card_row.split(':')
@@ -43,7 +46,8 @@ class Card:
 
 
 def load_data():
-    with open(r'2023\day_04\input.txt') as f:
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    with open(os.path.join(dir_path, 'input.txt')) as f:
         return f.readlines()
 
 
