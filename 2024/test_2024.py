@@ -8,6 +8,7 @@ from day_04.solution import (
     find_word as solution_04_A,
     find_word_2 as solution_04_B
 )
+from day_05.solution import find_corrects as solution_05
 
 
 def test_01():
@@ -59,3 +60,38 @@ def test_04():
     ]
     assert solution_04_A(data) == 18
     assert solution_04_B(data) == 9
+
+
+def test_05():
+    rules = [
+        (47, 53),
+        (97, 13),
+        (97, 61),
+        (97, 47),
+        (75, 29),
+        (61, 13),
+        (75, 53),
+        (29, 13),
+        (97, 29),
+        (53, 29),
+        (61, 53),
+        (97, 53),
+        (61, 29),
+        (47, 13),
+        (75, 47),
+        (97, 75),
+        (47, 61),
+        (75, 61),
+        (47, 29),
+        (75, 13),
+        (53, 13),
+    ]
+    updates = [
+        [75, 47, 61, 53, 29],
+        [97, 61, 53, 29, 13],
+        [75, 29, 13],
+        [75, 97, 47, 61, 53],
+        [61, 13, 29],
+        [97, 13, 75, 29, 47]
+    ]
+    assert solution_05(updates, rules) == 143
